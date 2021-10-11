@@ -1,0 +1,19 @@
+.bcard {
+    margin: 1rem 1rem;
+    max-width: 250px;
+    text-decoration: none;
+    user-select: none;
+    border: solid transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .bcard:hover {
+    text-decoration: none;
+    color: unset;
+    user-select: none;
+    border-radius: 5px;
+    border-width: 3px;
+    border: solid;
+    border-color: #1fb3ee;
+    transition: all 0.2s ease-in-out;
+  }

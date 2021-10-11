@@ -1,0 +1,19 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(#000, #ddd, #000);
+  border-radius: 0.3rem;
+  color: #333;
+}
+
+@media (min-width: 576px) {
+  .jumbotron {
+    padding: 4rem 2rem;
+  }
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 100;
+  border-radius: 0;
+}

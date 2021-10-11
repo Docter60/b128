@@ -1,0 +1,19 @@
+.bformcontrol {
+    background-color: transparent;
+}
+
+.bformcontrol:focus {
+    color: #bbd;
+    background-color: transparent;
+}
+
+.bnav {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.bnav:hover, .bnav:focus {
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}

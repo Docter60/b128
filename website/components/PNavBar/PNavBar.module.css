@@ -1,0 +1,16 @@
+.pnavbar {
+    max-height: 45px;
+    background-image: linear-gradient(to top right, rgb(29, 29, 59), #343a40, #343a40);
+}
+
+.pnav {
+    color: #ffffff;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.pnav:hover, .pnav:focus {
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
