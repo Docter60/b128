@@ -1,9 +1,4 @@
-// API URLs
-const MIA_API_URL_RELEASE = "https://b128.ddns.net:8081";
-const MIA_API_URL_DEBUG = "http://localhost:8081";
-const MIA_API_URL = MIA_API_URL_DEBUG;
-
-// topModerator query types and function
+const MIA_API_URL = process.env.MIA_API_URL || "http://localhost:5000";
 
 export interface TopModeratorRequest {
   resultCapacity: string;
@@ -28,8 +23,6 @@ export const API_topModerators = async (request: TopModeratorRequest) => {
     });
 };
 
-// topSubreddit query types and function
-
 export interface TopSubredditRequest {
   resultCapacity: string;
 }
@@ -52,8 +45,6 @@ export const API_topSubreddits = async (request: TopSubredditRequest) => {
       return res as TopSubredditResults;
     });
 };
-
-// queryModerator query types and function
 
 export interface ModeratorQueryRequest {
   moderator: string;
@@ -80,8 +71,6 @@ export const API_moderatorQuery = async (query: ModeratorQueryRequest) => {
       return res as ModeratorQueryResults;
     });
 };
-
-// querySubreddit query types and function
 
 export interface SubredditQueryRequest {
   subreddit: string;

@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import React, { useCallback, useRef } from "react";
 import ReactDOM from "react-dom";
+import { ForceGraphMethods } from "react-force-graph-3d";
 
 const DynamicForceGraph3D = dynamic(() => import("ForceGraph3D"), {
   ssr: false,
@@ -43,7 +44,7 @@ function formatData(jsonData) {
 
 function constructGraph(data) {
   const FocusGraph = () => {
-    const fgRef = useRef<any>();
+    const fgRef = useRef<ForceGraphMethods>();
 
     const handleClick = useCallback(
       (node) => {

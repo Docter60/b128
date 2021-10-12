@@ -4,10 +4,8 @@ import helmet from "helmet";
 import { errors } from "celebrate";
 import cors from "cors";
 import db from "./db";
-import { config } from "dotenv";
 
-config();
-db.connect(process.env.DB_CONNECTION, (err: MongoError) => {
+db.connect("mongodb://localhost:27017", (err: MongoError) => {
   /* tslint:disable no-console */
   console.log(err);
   /* tslint:enable no-console */

@@ -1,7 +1,7 @@
-import MongoClient, { MongoError } from 'mongodb';
+import { MongoClient, MongoError } from 'mongodb';
 
 interface DBState {
-    db: MongoClient.MongoClient
+    db: MongoClient
 }
 
 const state: DBState = {
@@ -11,7 +11,7 @@ const state: DBState = {
 function connect(url: string, done: (err?: MongoError) => void) {
     if (state.db) return done();
 
-    MongoClient.connect(url, {useNewUrlParser: true, useUnifiedTopology: true}, (err, db) => {
+    MongoClient.connect(url, (err: MongoError, db: MongoClient) => {
         if(err) return done(err);
         state.db = db;
     });
