@@ -4,7 +4,7 @@ import styles from "./BNavBar.module.css";
 
 export const BNavBar: React.FC = () => (
   <Navbar bg="dark" variant="dark" expand="lg" style={{ zIndex: 3 }}>
-    <Navbar.Brand href="/">b128</Navbar.Brand>
+    <Navbar.Brand href="/" style={{ marginLeft: 20 }}>b128</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse>
       <Nav className="mr-auto">
@@ -13,6 +13,9 @@ export const BNavBar: React.FC = () => (
         </Nav.Link>
         <Nav.Link href="/projects" className={styles.bnav}>
           Projects
+        </Nav.Link>
+        <Nav.Link href="/articles" className={styles.bnav}>
+          Articles
         </Nav.Link>
         <Nav.Link href="/about" className={styles.bnav}>
           About
@@ -28,7 +31,7 @@ export const BNavBar: React.FC = () => (
         />
       </Form>
     <Form>
-    <Button variant="outline-light">Search</Button>
+    <Button variant="outline-light" style={{ marginLeft: 20, marginRight: 20 }}>Search</Button>
     </Form>
     </Navbar.Collapse>
   </Navbar>

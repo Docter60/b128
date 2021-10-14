@@ -1,18 +1,18 @@
 import React from "react";
 import { ProjectCard } from "components/ProjectCard";
 import styles from "./ProjectCardDeck.module.css";
+import { Jumbotron } from "components/Jumbotron";
 
 export function ProjectCardDeck() {
   return (
     <div>
-      <div
-        className={styles.jumbotron + " bg-light p-5 rounded-lg my-3"}
+      <Jumbotron className={styles.jumbotron}
         data-aos="fade-up"
         data-aos-delay={250}
         data-aos-duration={1500}
       >
         <h2>Projects</h2>
-      </div>
+      </Jumbotron>
       <div
         style={{
           display: "flex",

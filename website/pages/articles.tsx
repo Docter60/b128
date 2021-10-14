@@ -1,10 +1,10 @@
 import { MainPageHeader } from "components/MainPageHeader";
 
-export default function Projects() {
+export default function Articles() {
   return (
     <div>
       <MainPageHeader />
-      Projects page
+      Articles page
     </div>
   );
 }

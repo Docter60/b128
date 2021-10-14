@@ -8,7 +8,7 @@ import {
   ModeratorFormStyle,
 } from "components/MIAQueryInspector/MIAQueryInspector.style";
 import { API_moderatorQuery, API_subredditQuery } from "Constants";
-import { submitGraphData } from 'MIAGrapher';
+import { submitGraphData } from 'MIAGraphWrapper';
 
 type ResponseData = {
   results: any[];
