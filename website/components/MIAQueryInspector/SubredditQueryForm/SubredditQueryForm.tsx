@@ -30,7 +30,7 @@ interface Props {
   onSubmit: (values: SubredditQueryRequest) => Promise<SubredditQueryResults>;
 }
 
-export const SubredditQueryForm: React.FC<Props> = (props: Props) => {
+export const SubredditQueryForm = (props: Props) => {
   const initialValues: SubredditQueryRequest = {
     subreddit: "",
     modCount: "",

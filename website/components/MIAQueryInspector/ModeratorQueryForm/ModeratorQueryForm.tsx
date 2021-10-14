@@ -30,7 +30,7 @@ interface Props {
   onSubmit: (values: ModeratorQueryRequest) => Promise<ModeratorQueryResults>;
 }
 
-export const ModeratorQueryForm: React.FC<Props> = (props: Props) => {
+export const ModeratorQueryForm = (props: Props) => {
   const initialValues: ModeratorQueryRequest = {
     moderator: "",
     subCount: "",
@@ -74,7 +74,7 @@ export const ModeratorQueryForm: React.FC<Props> = (props: Props) => {
                   </Tooltip>
                 }
               >
-                  <InputGroup.Text>Moderator</InputGroup.Text>
+                <InputGroup.Text>Moderator</InputGroup.Text>
               </OverlayTrigger>
               <FormControl
                 placeholder="Search"
@@ -95,7 +95,7 @@ export const ModeratorQueryForm: React.FC<Props> = (props: Props) => {
                   </Tooltip>
                 }
               >
-                  <InputGroup.Text>Sub Count</InputGroup.Text>
+                <InputGroup.Text>Sub Count</InputGroup.Text>
               </OverlayTrigger>
               <FormControl
                 placeholder="10"
@@ -122,7 +122,7 @@ export const ModeratorQueryForm: React.FC<Props> = (props: Props) => {
                   </Tooltip>
                 }
               >
-                  <InputGroup.Text>Result Capacity</InputGroup.Text>
+                <InputGroup.Text>Result Capacity</InputGroup.Text>
               </OverlayTrigger>
               <FormControl
                 placeholder="100"

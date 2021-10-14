@@ -9,7 +9,7 @@ interface Props {
   imglink?: string;
 }
 
-export function ProjectCard(props: Props) {
+export const ProjectCard = (props: Props) => {
   const [duration, setDuration] = useState(1000);
   useEffect(() => {
     setDuration(1000 + 200 * Math.round(Math.random() * 10));
@@ -36,4 +36,4 @@ export function ProjectCard(props: Props) {
       </Card>
     </div>
   );
-}
+};

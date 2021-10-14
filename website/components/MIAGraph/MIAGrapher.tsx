@@ -1,7 +1,11 @@
 import React, { useCallback, useRef } from "react";
 import ForceGraph3D, { ForceGraphMethods } from "react-force-graph-3d";
 
-const FocusGraph = (props: any) => {
+type Props = {
+  data: any;
+};
+
+const ForceGraph = (props: Props) => {
   const fgRef = useRef<ForceGraphMethods>();
 
   const handleClick = useCallback(
@@ -35,4 +39,4 @@ const FocusGraph = (props: any) => {
   );
 };
 
-export default FocusGraph;
+export default ForceGraph;

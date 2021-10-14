@@ -3,10 +3,11 @@ import { ProjectCard } from "components/ProjectCard";
 import styles from "./ProjectCardDeck.module.css";
 import { Jumbotron } from "components/Jumbotron";
 
-export function ProjectCardDeck() {
+export const ProjectCardDeck = () => {
   return (
     <div>
-      <Jumbotron className={styles.jumbotron}
+      <Jumbotron
+        className={styles.jumbotron}
         data-aos="fade-up"
         data-aos-delay={250}
         data-aos-duration={1500}
@@ -37,4 +38,4 @@ export function ProjectCardDeck() {
       </div>
     </div>
   );
-}
+};

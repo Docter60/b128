@@ -7,7 +7,7 @@ interface Props {
   visible: boolean;
 }
 
-export const SubredditRankingTable: React.FC<Props> = (props: Props) => {
+export const SubredditRankingTable = (props: Props) => {
   const [requestedData, setRequestedData] = useState(false);
   const [table, setTable] = useState(
     <div>

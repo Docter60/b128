@@ -1,10 +1,10 @@
 import React from "react";
 import { BNavBar } from "components/BNavBar";
 
-export function MainPageHeader() {
+export const MainPageHeader = () => {
   return (
     <div>
       <BNavBar />
     </div>
   );
-}
+};

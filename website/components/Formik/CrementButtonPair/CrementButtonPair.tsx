@@ -9,9 +9,7 @@ interface CrementProps {
   default: number;
 }
 
-export const CrementButtonPair: React.FC<CrementProps> = (
-  props: CrementProps
-) => {
+export const CrementButtonPair = (props: CrementProps) => {
   const [, meta, helpers] = useField(props.name);
   const min = props.min ? props.min : -Infinity;
   const max = props.max ? props.max : Infinity;

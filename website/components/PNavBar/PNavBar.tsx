@@ -8,14 +8,14 @@ export interface Props {
   nameShadow?: string;
 }
 
-export function PNavBar(props: Props) {
+export const PNavBar = (props: Props) => {
   const projectPath = "/project/" + props.name.toLowerCase();
   const style = {
     color: props.nameColor ? props.nameColor : "rgb(58, 58, 158)",
     textShadow: props.nameShadow
       ? props.nameShadow
       : "0 0 5px rgb(58, 58, 158)",
-      marginLeft: 30
+    marginLeft: 30,
   };
   return (
     <Navbar
@@ -41,4 +41,4 @@ export function PNavBar(props: Props) {
       </Navbar.Collapse>
     </Navbar>
   );
-}
+};

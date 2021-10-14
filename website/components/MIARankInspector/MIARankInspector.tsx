@@ -6,7 +6,7 @@ import { HamburgerMenu } from "components/HamburgerMenu";
 import { SubredditRankingTable } from "components/MIARankInspector/SubredditRankingTable";
 import { ModeratorRankingTable } from "components/MIARankInspector/ModeratorRankingTable";
 
-export const MIARankInspector: React.FC = () => {
+export const MIARankInspector = () => {
   const [open, setOpen] = useState(false);
   const [requestTopSubs, setRequestTopSubs] = useState(false);
   const [requestTopMods, setRequestTopMods] = useState(false);

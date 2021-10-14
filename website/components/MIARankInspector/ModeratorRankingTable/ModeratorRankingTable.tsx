@@ -7,7 +7,7 @@ interface Props {
   visible: boolean;
 }
 
-export const ModeratorRankingTable: React.FC<Props> = (props: Props) => {
+export const ModeratorRankingTable = (props: Props) => {
   const [requestedData, setRequestedData] = useState(false);
   const [table, setTable] = useState(
     <div>

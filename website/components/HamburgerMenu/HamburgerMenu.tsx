@@ -9,7 +9,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export function HamburgerMenu(props: Props) {
+export const HamburgerMenu = (props: Props) => {
   return (
     <StyledMenu
       open={props.open}
@@ -19,4 +19,4 @@ export function HamburgerMenu(props: Props) {
       {props.children}
     </StyledMenu>
   );
-}
+};

@@ -7,7 +7,7 @@ interface Props {
   error: string;
 }
 
-export const FormError: React.FC<Props> = (props: Props) => {
+export const FormError = (props: Props) => {
   return (
     <FormErrorStyle>
       {props.error ? (

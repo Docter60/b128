@@ -6,10 +6,8 @@ interface InequalityGroupProps {
   name: string;
 }
 
-export const IneqalityGroup: React.FC<InequalityGroupProps> = (
-  props: InequalityGroupProps
-) => {
-  const [field,, helpers] = useField(props.name);
+export const IneqalityGroup = (props: InequalityGroupProps) => {
+  const [field, , helpers] = useField(props.name);
   return (
     <ToggleButtonGroup
       name="modCountRelation"

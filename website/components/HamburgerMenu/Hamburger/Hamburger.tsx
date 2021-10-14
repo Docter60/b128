@@ -7,7 +7,7 @@ interface Props {
   variant?: string;
 }
 
-export function Hamburger(props: Props) {
+export const Hamburger = (props: Props) => {
   return (
     <StyledBurger
       open={props.open}
@@ -19,4 +19,4 @@ export function Hamburger(props: Props) {
       <div />
     </StyledBurger>
   );
-}
+};
