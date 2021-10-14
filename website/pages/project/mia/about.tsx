@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import { ProjectPageHeader } from "components/ProjectPageHeader";
 
-export default function MIAAboutPage() {
+const MIAAboutPage = () => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -16,4 +16,6 @@ export default function MIAAboutPage() {
       MIA about page
     </div>
   );
-}
+};
+
+export default MIAAboutPage;

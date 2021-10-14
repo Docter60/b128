@@ -1,10 +1,12 @@
 import { MainPageHeader } from "components/MainPageHeader";
 
-export default function About() {
+const About = () => {
   return (
     <div>
       <MainPageHeader />
       About page
     </div>
   );
-}
+};
+
+export default About;

@@ -1,10 +1,12 @@
 import { MainPageHeader } from "components/MainPageHeader";
 
-export default function Projects() {
+const Projects = () => {
   return (
     <div>
       <MainPageHeader />
       Projects page
     </div>
   );
-}
+};
+
+export default Projects;
