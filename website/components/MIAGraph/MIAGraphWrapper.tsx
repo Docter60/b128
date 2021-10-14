@@ -5,14 +5,6 @@ const FocusGraph = dynamic(() => import("./MIAGrapher"), {
   ssr: false,
 });
 
-export function submitGraphData(jsonData) {
-  const data = formatData(jsonData);
-  ReactDOM.render(
-    <FocusGraph data={data} />,
-    document.getElementById("miacanvas")
-  );
-}
-
 function formatData(jsonData) {
   // Create empty graph input object
   let data = { nodes: [], links: [] };
@@ -41,6 +33,14 @@ function formatData(jsonData) {
     });
   });
   return data;
+}
+
+export function submitGraphData(jsonData) {
+  const data = formatData(jsonData);
+  ReactDOM.render(
+    <FocusGraph data={data} />,
+    document.getElementById("miacanvas")
+  );
 }
 
 export default FocusGraph;

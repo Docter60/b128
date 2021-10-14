@@ -15,6 +15,7 @@ export function PNavBar(props: Props) {
     textShadow: props.nameShadow
       ? props.nameShadow
       : "0 0 5px rgb(58, 58, 158)",
+      marginLeft: 30
   };
   return (
     <Navbar

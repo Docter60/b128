@@ -8,7 +8,7 @@ import {
   ModeratorFormStyle,
 } from "components/MIAQueryInspector/MIAQueryInspector.style";
 import { API_moderatorQuery, API_subredditQuery } from "Constants";
-import { submitGraphData } from 'MIAGraphWrapper';
+import { submitGraphData } from "components/MIAGraph";
 
 type ResponseData = {
   results: any[];
@@ -29,8 +29,8 @@ export function MIAQueryInspector() {
           <SubredditQueryForm
             onSubmit={(values) => {
               return new Promise(async (resolve) => {
-                let req = {...values};
-                if(req.subreddit === "") delete req.subreddit;
+                let req = { ...values };
+                if (req.subreddit === "") delete req.subreddit;
                 console.log(req);
                 const data = await API_subredditQuery(req);
                 console.log(data.results);
@@ -45,8 +45,8 @@ export function MIAQueryInspector() {
           <ModeratorQueryForm
             onSubmit={(values) => {
               return new Promise(async (resolve) => {
-                let req = {...values};
-                if(req.moderator === "") delete req.moderator;
+                let req = { ...values };
+                if (req.moderator === "") delete req.moderator;
                 console.log(req);
                 const data = await API_moderatorQuery(req);
                 console.log(data.results);

@@ -1,5 +1,4 @@
 import React, { useCallback, useRef } from "react";
-import ReactDOM from "react-dom";
 import ForceGraph3D, { ForceGraphMethods } from "react-force-graph-3d";
 
 const FocusGraph = (props: any) => {
@@ -9,7 +8,7 @@ const FocusGraph = (props: any) => {
     (node) => {
       const distance = 40;
       const distRatio = 1 + distance / Math.hypot(node.x, node.y, node.z);
-      if(fgRef.current) {
+      if (fgRef.current) {
         console.log(fgRef.current);
         fgRef.current.cameraPosition(
           {
