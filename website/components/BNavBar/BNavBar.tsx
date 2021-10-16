@@ -3,7 +3,7 @@ import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap";
 import styles from "./BNavBar.module.css";
 
 export const BNavBar = () => (
-  <Navbar bg="dark" variant="dark" expand="lg" style={{ zIndex: 3 }}>
+  <Navbar bg="dark" variant="dark" expand="lg" style={{ height: 70, zIndex: 3 }}>
     <Navbar.Brand href="/" style={{ marginLeft: 20 }}>
       b128
     </Navbar.Brand>
