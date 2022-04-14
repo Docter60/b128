@@ -64,6 +64,8 @@ Initially using react, the website now uses nextjs to host the web app.  The app
 
 ## Resulting Proof of Concept
 
+https://user-images.githubusercontent.com/11632779/163316075-1e31e32e-b72c-4331-9e01-ee40dc1e347e.mp4
+
 ![Initial screen](docs/img0.png)
 
 ![Default Subreddit Query](docs/img2.png)
